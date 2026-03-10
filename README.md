@@ -100,11 +100,12 @@ Notes:
   
 ---
 
-📈 Expected Outcomes
-- Identify which candidate attributes most strongly predict performance
-- Understand model predictions and feature influence
-- Simulate a recruitment analytics workflow end-to-end
+## 🔍 Key Insights
 
+- The Logistic Regression model achieved **87.5% overall accuracy**, effectively predicting Low and Average performers.  
+- **Years of experience** and **previous ratings** are the strongest predictors of performance, while technical, interview, and personality scores contribute moderately.  
+- High performers are rare, making them harder to predict, but the model coefficients clearly show which features drive higher performance probabilities.  
+- Example predictions show the model can assess new candidates based on their scores and experience, providing actionable insights for recruitment decisions.
 ---
 
 ## 🚀 Future Improvements
