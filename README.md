@@ -2,24 +2,27 @@
 
 ## 📌 Project Overview
 
-This project simulates a real-world recruitment analytics problem:  
-**Can we predict a candidate’s future job performance based on pre-employment evaluation metrics?**
+This project simulates a real-world **recruitment analytics problem**:  
 
-Using synthetic data, we build and evaluate machine learning models to classify candidates into performance categories.
+> Can we predict a candidate’s future job performance based on pre-employment evaluation metrics?
+
+Using synthetic data, we **build, train, and evaluate a machine learning model** to classify candidates into performance categories (Low, Average, High).  
 
 This project demonstrates:
 
-- Data simulation
-- Exploratory Data Analysis (EDA)
-- Feature engineering
-- Model training and evaluation
-- Analytical interpretation of results
+- Data simulation & preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Feature engineering  
+- Machine learning model training & evaluation  
+- Analytical interpretation of results  
+
+The **main notebook** (`exploration.ipynb`) is the centerpiece, showing the **entire workflow from raw data to actionable insights**.  
 
 ---
 
 ## 🎯 Problem Statement
 
-Organizations invest significant resources in recruitment. Predicting candidate performance before hiring can improve decision-making and reduce turnover costs.
+Organizations invest significant resources in recruitment. Predicting candidate performance **before hiring** can improve decision-making and reduce turnover costs.
 
 This project aims to:
 
@@ -29,7 +32,7 @@ This project aims to:
 
 ## 🧾 Dataset (Simulated)
 
-Since real hiring data is confidential, this project generates synthetic candidate data with the following features:
+Since real hiring data is confidential, this project generates **synthetic candidate data** with the following features:
 
 | Feature | Description |
 |----------|-------------|
@@ -41,7 +44,7 @@ Since real hiring data is confidential, this project generates synthetic candida
 | previous_rating | Performance rating from past role |
 | performance_label | Target variable (High / Average / Low) |
 
-**Dataset size:** ~500–1000 simulated candidates.
+**Dataset size:** 800 simulated candidates  
 
 ---
 
@@ -59,29 +62,47 @@ Since real hiring data is confidential, this project generates synthetic candida
 
 1. Data Generation  
 2. Data Cleaning & Preprocessing  
-3. Exploratory Data Analysis  
+3. Exploratory Data Analysis (EDA)  
 4. Model Training  
-   - Logistic Regression  
-   - Random Forest  
+   - Logistic Regression (Multiclass)  
 5. Model Evaluation  
-   - Accuracy  
-   - Precision  
-   - Recall  
-   - F1-score  
-   - Confusion Matrix  
-
----
-
-## 📈 Expected Outcomes
-
-- Identify which candidate attributes most strongly predict performance  
-- Compare model performance  
-- Provide insight into recruitment data simulation  
+   - Accuracy, Precision, Recall, F1-score  
+   - Feature Influence Analysis (Coefficients & Heatmap)  
+6. Example Prediction for New Candidates  
 
 ---
 
 ## 📁 Project Structure
 
+```text
+Candidate-Performance-Prediction/
+│
+├── data/
+│   └── simulated_candidates.csv        # Synthetic candidate dataset
+│
+├── notebooks/
+│   └── exploration.ipynb               # Main analysis & ML notebook
+│   └── .vscode/                        # VSCode settings
+│   └── .ipynb_checkpoints/             # Jupyter checkpoints
+│
+├── src/
+│   └── data_generation.py              # Code for generating synthetic dataset
+│
+└── README.md                           # Project documentation
+```
+--- 
+
+Notes:
+- data/ contains the synthetic dataset.
+- notebooks/ contains the main notebook, showcasing the complete workflow.
+- src/ includes supporting scripts, like data generation.
+  
+---
+
+📈 Expected Outcomes
+- Identify which candidate attributes most strongly predict performance
+- Understand model predictions and feature influence
+- Simulate a recruitment analytics workflow end-to-end
 
 ---
 
