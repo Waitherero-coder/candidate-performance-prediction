@@ -42,7 +42,6 @@ def generate_candidate_data(n_samples=800, random_state=42):
     # Convert to numeric bonus array
     education_bonus = np.array([education_bonus_map[level] for level in education])
 
-
     # Years of experience (integer between 0 and 15)
     years_experience = np.random.randint(0, 16, size=n_samples)
 
@@ -90,7 +89,8 @@ def generate_candidate_data(n_samples=800, random_state=42):
 
     print("Min score:", performance_score.min())
     print("Max score:", performance_score.max())
-    # Convert continuous performance score into categories
+    # Convert continuous performance score into categories - Create Performance Labels
+    # This allows us to treat the problem as a classification task
     performance_label = pd.cut(
         performance_score,
         bins=[0, 85, 105, np.inf],
