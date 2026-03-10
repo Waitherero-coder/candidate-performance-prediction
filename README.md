@@ -66,7 +66,8 @@ Since real hiring data is confidential, this project generates **synthetic candi
 4. Model Training  
    - Logistic Regression (Multiclass)  
 5. Model Evaluation  
-   - Accuracy, Precision, Recall, F1-score  
+   - Accuracy, Precision, Recall, F1-score
+   - Confusion Matrix
    - Feature Influence Analysis (Coefficients & Heatmap)  
 6. Example Prediction for New Candidates  
 
